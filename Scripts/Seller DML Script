@@ -1,0 +1,6 @@
+INSERT INTO seller (id, name, email, created_at) VALUES
+(1, 'EdTest', 'Edtest@gmail.com', '2020-01-02 13:20:20'),
+(2, 'ed', 'Ed@outlook.com', '2020-01-03 13:20:20'),
+(3, 'sampleed', 'sampleed@yahoo.com', '2020-01-04 13:20:20'),
+(4, 'test', 'test@gmail.com', '2020-01-05 13:20:20'),
+(5, 'sample', 'sample@gmail.com', '2020-01-06 13:20:20');

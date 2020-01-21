@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS cart (
+	id int(11) NOT NULL,
+	seller_id int(11) NOT NULL,
+	product_id int(11) NOT NULL,
+	name varchar(200) NOT NULL,
+	description varchar(200) NOT NULL,
+	added_at datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ALTER TABLE cart ADD PRIMARY KEY (id);
+ALTER TABLE cart MODIFY id int(11) NOT NULL AUTO_INCREMENT;
+--ALTER TABLE cart ADD FOREIGN KEY (seller_id) REFERENCES seller(id);  
+--ALTER TABLE cart ADD FOREIGN KEY (product_id) REFERENCES product(id);  

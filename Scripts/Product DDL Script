@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS product (
+	id int(11) NOT NULL,
+	seller_id int(11) NOT NULL,
+	name varchar(200) NOT NULL,
+	description varchar(200) NOT NULL,
+	created_at datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ALTER TABLE product ADD PRIMARY KEY (id);
+ALTER TABLE product MODIFY id int(11) NOT NULL AUTO_INCREMENT;
+--ALTER TABLE product ADD FOREIGN KEY (seller_id) REFERENCES seller(id);  
